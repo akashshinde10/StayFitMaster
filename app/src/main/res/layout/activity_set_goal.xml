@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetGoalActivity"
+    android:background="@drawable/cloudy_apple">
+
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Spinner
+        android:id="@+id/set_type"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:entries="@array/Target_Type"
+        android:hint="Gain/Loss Weight"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goal_msg"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <EditText
+        android:id="@+id/set_weight"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:hint="Target Weight"
+        android:textColor="@android:color/black"
+        android:background="@drawable/white_register"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_type"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <EditText
+        android:id="@+id/set_Duration"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:textColor="@android:color/black"
+        android:background="@drawable/white_register"
+        android:hint="Target Duration(Months)"
+        android:paddingLeft="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_weight" />
+
+    <Button
+        android:id="@+id/btn_set"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:hint="Set Target"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/btn_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_Duration"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <TextView
+        android:id="@+id/tv_set_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Set your goal"
+        android:textColor="@color/dark_yello"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_next" />
+
+    <TextView
+        android:id="@+id/tv_goal_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#00FF5353"
+        android:text="Turn fat into fit!"
+        android:background="@drawable/get_started"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_set_goal" />
+
+    <TextView
+        android:id="@+id/tv_goal_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:textColor="#C8F54B4B"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set" />
+</androidx.constraintlayout.widget.ConstraintLayout>

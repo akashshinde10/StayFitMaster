@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "428737675702",
+    "firebase_url": "https://libra-fitness.firebaseio.com",
+    "project_id": "libra-fitness",
+    "storage_bucket": "libra-fitness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428737675702:android:73a003bc1af270a6588117",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428737675702-t9a5rk9kvrt5s67ii0hsgb9t8g5ntfq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRjz2cnAplFT_lCA03_6N8NtmBmhG8LSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428737675702-t9a5rk9kvrt5s67ii0hsgb9t8g5ntfq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

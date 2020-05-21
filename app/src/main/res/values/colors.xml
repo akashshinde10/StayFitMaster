@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2980B9</color>
+    <color name="light_yello">#FCBD34</color>
+    <color name="dark_yello">#F83F47</color>
+    <color name="tv_background">#65FF2328</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Titanium">#949494</color>
+    <color name="Home">#1F1F1F</color>
+    <color name="Bone">#010C1F</color>
+    <color name="back">#BAFFFFFF</color>
+    <color name="colorfeedback">#ffffdf</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="Grey">#7B7B7D</color>
+</resources>

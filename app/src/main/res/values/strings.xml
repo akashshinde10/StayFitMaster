@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Libra Fitness</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Libra Fitness</string>
+    <string name="nav_header_subtitle">We Keep You Fit</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logout</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Schedule</string>
+    <string name="menu_slideshow">Profile</string>
+    <string name="menu_share">Contact Us</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="already_user">Already A User?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="registered_email">Registered Email</string>
+    <string name="reset_passoword">Reset Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="height">Height(cms)</string>
+    <string name="weight">Weight(Kgs)</string>
+    <string name="bmi">Get My BMI</string>
+    <string name="username">Username</string>
+    <string name="edit_profile">Save</string>
+    <string name="change_password">Change Password</string>
+    <string name="update_password">Update Password</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="normal_map">Normal Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="terrain_map">Terrain Map</string>
+    <string name="fitness_goal">Fitness Goal</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="quote2">Cheat on your girlfriends, not on your workouts.</string>
+    <string name="exercise">Exercise</string>
+    <string-array name="Gender">
+        <item>"Male"</item>
+        <item>"Female"</item>
+        <item>"Others"</item>
+    </string-array>
+    <string-array name="Target_Type">
+        <item>"Weight Loss"</item>
+        <item>"Weight Gain</item>
+    </string-array>
+</resources>

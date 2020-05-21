@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    tools:context=".UpdateProfile"
+    android:background="@drawable/cloudy_apple"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <ImageView-->
+    <!-- android:id="@+id/imageView2"-->
+    <!-- android:layout_width="match_parent"-->
+    <!-- android:layout_height="match_parent"-->
+    <!-- app:srcCompat="@drawable/abs_back"-->
+    <!-- tools:layout_editor_absoluteX="-77dp"-->
+    <!-- tools:layout_editor_absoluteY="0dp" />-->
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/toolbar_next" />
+
+    <ImageView android:layout_height="120dp"
+        android:layout_width="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/update_pic"
+        app:srcCompat="@drawable/ic_profile_pic"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_next"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/etupdate_username"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/white_register"
+        android:textColor="@android:color/black"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_pic" />
+
+    <EditText
+        android:id="@+id/etupdate_age"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/white_register"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/age"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etupdate_username" />
+
+    <EditText
+        android:background="@drawable/white_register"
+        android:layout_height="30dp"
+        android:layout_width="115dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/etupadte_height"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/etupdate_age"
+        app:layout_constraintHorizontal_bias="0.279"
+        android:layout_marginTop="40dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/height"
+        android:gravity="center"
+        android:ems="10" />
+
+    <EditText
+        android:background="@drawable/white_register"
+        android:layout_height="30dp"
+        android:layout_width="115dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/etupdate_weight"
+        app:layout_constraintTop_toBottomOf="@+id/etupdate_age"
+        app:layout_constraintHorizontal_bias="0.752"
+        android:layout_marginTop="40dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/weight"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:ems="10"
+        android:paddingLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/etupdate_bmi"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/white_register"
+        android:gravity="center"
+        android:hint="BMI"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etupdate_age" />
+
+    <Button
+        android:background="@drawable/btn_rounded"
+        android:layout_height="40dp"
+        android:layout_width="175dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/etupdate_bmi"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:text="Save Details"/>
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/etupdate_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_pic"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/etupdate_age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etupdate_username"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/height"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/etupadte_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etupdate_age"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:textColor="#F5000000"
+        app:layout_constraintBottom_toTopOf="@+id/etupdate_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etupdate_age"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvbmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/etupdate_bmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etupadte_height"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#C3EE565A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.097" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
